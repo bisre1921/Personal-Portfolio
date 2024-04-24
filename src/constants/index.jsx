@@ -17,6 +17,7 @@ import {
     docker,
     meta,
     starbucks,
+    // carconnect,
     tesla,
     shopify,
     carrent,
@@ -24,6 +25,17 @@ import {
     tripguide,
     threejs,
   } from "../assets";
+
+  import carconnect from '../assets/carconnect.png';
+  import realstate from "../assets/real-state.png";
+  import travelconnect from "../assets/travelconnect.png";
+  import instagram from "../assets/instagram.jpg";
+  import tastybites from "../assets/tastybites.png";
+  import highschool from "../assets/highschool.jpg";
+  import aau from "../assets/aau.jpg";
+  import code from "../assets/code.jpg"
+  import tech from "../assets/tech.jpg"
+  import firebase from "../assets/tech/firebase.jpg"
   
   export const navLinks = [
     {
@@ -45,13 +57,17 @@ import {
       title: "Full Stack Web Developer",
       icon: web,
     },
+    // {
+    //   title: "MERNT Stack Developer",
+    //   icon: backend,
+    // },
     {
-      title: "MERNT Stack Developer",
-      icon: backend,
+      title: "React Developer",
+      icon: code,
     },
     {
-      title: "Firebase Developer",
-      icon: mobile,
+      title: "computer science student",
+      icon: tech,
     },
   ];
   
@@ -77,9 +93,13 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "firebase",
+      icon: firebase,
     },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -92,10 +112,10 @@ import {
       name: "MongoDB",
       icon: mongodb,
     },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
     {
       name: "git",
       icon: git,
@@ -104,64 +124,61 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "High School Journey",
+      company_name: "Marvel International School, Assela",
+      icon: highschool,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "August 18, 2017 - November 14, 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Attending Marvel International School in Assela sparked my curiosity and enthusiasm for technology and programming.",
+        "It was during this time that I first delved into the world of coding, igniting a passion that continues to drive me forward.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Computer Science Student",
+      company_name: "Addis Ababa University",
+      icon: aau,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "June 1, 2022 - present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Studying computer science and gaining expertise in various programming languages and technologies.",
+        "Exploring different areas of computer science, including algorithms, data structures, and software engineering.",
+        "Collaborating with peers on projects and assignments to gain practical experience.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Personal Projects Enthusiast",
+      company_name: "",
+      icon: code,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Since I Embarked on My Coding Journey",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Creating personal projects to apply theoretical knowledge and explore new technologies.",
+        "Developing web applications using languages like JavaScript.",
+        "Experimenting with frameworks and libraries such as React.js, Node.js , Next.js",
+        "Showcasing projects on platforms like GitHub to demonstrate coding abilities and creativity.",
       ],
     },
     {
-      title: "Full stack Developer",
+      title: "Tech Enthusiast",
       company_name: "Meta",
-      icon: meta,
+      icon: tech,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Years of Passion",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
+        "Immersed in the world of technology with boundless curiosity and passion for innovation.",
+      "Driven by a relentless desire to learn and explore new advancements in the field.",
+      "Eagerly anticipating the future of the industry, where technology evolves and possibilities expand.",
+      "Committed to contributing to this dynamic landscape, making meaningful impacts and driving progress.",
+    ],
     },
   ];
   
@@ -194,67 +211,141 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "CarConnect",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Revolutionizing the way people buy and sell cars, my web platform offers users the ability to effortlessly list their vehicles for sale or purchase. With just a few essential details, sellers can showcase their cars to potential buyers. Additionally, buyers can easily connect with sellers to negotiate deals or even arrange rentals. It's the ultimate solution for streamlining the car selling and buying process.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
         },
         {
           name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "react-spinners",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "react-toastify",
+          color: "chocolate-text-gradient",
+        },
+        {
+          name: "firebase",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: carconnect,
+      source_code_link: "https://github.com/bisre1921/React-Car-Rent-Sale",
     },
     {
-      name: "Job IT",
+      name: "Real-State Rent or Sell",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Introducing my cutting-edge real estate platform, where users can seamlessly list their properties for sale or rent with all the essential details at their fingertips. Potential buyers or tenants can easily browse through listings and connect directly with property owners or agents to make inquiries or finalize deals.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "tailwind",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "firebase",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: realstate,
+      source_code_link: "https://github.com/bisre1921/React-Real-State",
     },
     {
-      name: "Trip Guide",
+      name: "TravelConnect",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Introducing my innovative travel recommendation platform where users can effortlessly share their favorite destinations by posting them along with valuable information. Whether it's a hidden gem or a well-known spot, users can showcase places they love and provide insights to fellow travelers. On the platform, other users can explore these recommendations visually on an interactive map, allowing them to discover new destinations and plan their adventures with ease. ",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "node",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "express",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "mongodb",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: travelconnect,
+      source_code_link: "https://github.com/bisre1921/React-Travel-Connect",
+    },
+    {
+      name: "Instagram Clone",
+      description:
+        "Step into my Instagram clone, where users can seamlessly share their moments with the world. From posting captivating photos to editing their profiles, including profile pictures, users have all the tools they need to express themselves. Engage with the community by liking and commenting on posts, fostering connections and building relationships. ",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "react-toastify",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "styled-components",
+          color: "chocolate-text-gradient",
+        },{
+          name: "react-spinner",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: instagram,
+      source_code_link: "https://github.com/bisre1921/React-Instagram-Clone",
+    },
+    {
+      name: "TastyBites",
+      description:
+        "Indulge in TastyBites, my culinary haven where users can explore an array of delicious recipes from around the globe. With just a simple search, users can uncover detailed information about any dish, including ingredients, prices, and more, thanks to the Spoonacular Food API integration. Dive into diverse cuisines, from Chinese delights to American classics, and expand your culinary horizons.",
+        tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "react-slick",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "styled-components",
+          color: "chocolate-text-gradient",
+        },
+        {
+          name: "Spoonacular Food Api",
+          color: "pink-text-gradient",
+        },
+
+      ],
+      image: tastybites,
+      source_code_link: "https://github.com/bisre1921/React-Recipe-Web",
     },
   ];
   

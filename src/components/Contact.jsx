@@ -27,9 +27,46 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-  }
+    emailjs
+      .send(
+        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_9x2to4e" , 
+        "template_96mmtzc" ,
+        {
+          from_name: form.name,
+          to_name: "Bisrat Tewodros",
+          from_email: form.email,
+          to_email: "bisrattewodros3@gmail.com",
+          message: form.message,
+        },
+        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "hpo4CAFJpemjr75GR"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+
+          alert("something went wrong. Please try again.");
+        }
+      );
+  };
+
 
 
   return (

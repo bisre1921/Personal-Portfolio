@@ -114,6 +114,38 @@
   -webkit-text-fill-color: transparent;
 }
 
+.chocolate-text-gradient {
+  background: #d2691e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #d2691e,
+    #8b4513
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #d2691e,
+    #8b4513
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gray-text-gradient {
+  background: #808080; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #808080,
+    #a9a9a9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #808080,
+    #a9a9a9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;
